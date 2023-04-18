@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="fr" dir="ltr">
+  <head>
+  <title>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</title>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="CSS/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CNFS de l'Aube</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="https://www.cnfs-aube.fr">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Accueil</span>
+        </a>
+         <span class="tooltip">Accueil</span>
+      </li>
+      <li>
+       <a href="cartographie.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Acteurs</span>
+       </a>
+       <span class="tooltip">Acteurs</span>
+     </li>
+     <li>
+       <a href="administrations.html">
+         <i class='bx bx-grid-alt' ></i>
+         <span class="links_name">Administrations</span>
+       </a>
+       <span class="tooltip">Administrations</span>
+     </li>
+     <li>
+       <a href="/ressources.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Ressourcerie</span>
+       </a>
+       <span class="tooltip">Ressourcerie</span>
+     </li>
+     <li>
+       <a href="liens.html">
+         <i class='bx bx-link' ></i>
+         <span class="links_name">Liens utiles</span>
+       </a>
+       <span class="tooltip">liens utiles</span>
+     </li>
+     <li>
+       <a href="rencontres.html">
+         <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Rencontres mensuelles</span>
+       </a>
+       <span class="tooltip">Rencontres mensuelles</span>
+     </li>
+     <li>
+       <a href="discord.html">
+         <i class='bx bxl-discord' ></i>
+         <span class="links_name">Discord</span>
+       </a>
+       <span class="tooltip">Discord</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">Olivier</div>
+             <div class="job">CNFS</div>
+           </div>
+         </div>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text"><center><h3>Liens Utiles</h3></center></div><br />
+	  <div class="text">Une liste de liens utiles pour nos missions</div>
+  
+  <div id="conteneur">
+	<div id="contenu">
+	<!--
+	Impl&eacute;mentation
+	-->
+		<div id="auCentre">
+		  <div class="barre">
+			<button class="onglet actif" onclick="ouvrirOnglet(event,'Exercices')">Exercices</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'Impots')">Outils</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'Ameli')">Graphisme & vid&eacute;os</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'ANEF')">ANEF</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'CAF')">CAF</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'Retraite')">Retraite</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'SP')">Service Public</button>
+		  </div>
+		  
+		  <div id="Exercices" class="rubrique"> <!--On garde rubrique pour reconna�tre par code Javascript-->
+			<h1>Exercices</h1>
+			<p><a href="https://mon-annuaire-du-web.fr/limbo/" target="new">LIMBO</a><br />
+			<a href="https://view.genial.ly/63d236601b9ac60018c437d0/presentation-texte-a-trou-copier-coller" target="new">Genially copier coller</a><br />
+			<a href="https://view.genial.ly/633ecbf72e32050019900e8c/interactive-content-dragon-dungeon-breakout" target="new">Genially Dragon</a><br />
+			<a href="https://cyberdeclic.org/ccc" target="new">Cyberdeclic copier coller</a><br />
+			<a href="https://kahoot.com" target="new">Kahoot</a><br />
+           <a href="https://forms.gle/gpHyxaj4aPKCghHH8" target="new">formulaire test recherche</a><br />
+			</p>
+		  </div>
+
+		  <div id="Impots" class="rubrique" style="display:none">
+			<h1>Outils pratiques</h1>
+			<p>G&eacute;n&eacute;rateur de mot de passe :<br />
+			<a href="https://www.motdepasse.xyz/" target="new">XYZ</a>
+			<p>Force d'un mot de passe :<br />
+			<a href="https://password.kaspersky.com/fr/" target="new">Kaspersky</a>
+			<p>Ai-je &eacute;t&eacute; pirat&eacute; ? :<br />
+			<a href="https://haveibeenpwned.com//" target="new">powned</a>
+			
+			
+			</p> 
+		  </div>
+
+		  <div id="Ameli" class="rubrique" style="display:none">
+			<h1>Tout ce qui concerne le graphisme</h1>
+			<p>Images PNG : <br />
+			<a href="https://www.pngegg.com/fr" target="new">PNG</a><br />
+			<p>Suppression partie image : <br />
+			<a href="https://www.hama.app/" target="new">Hama</a><br />
+			</p><p>Conversion video youtube en MP3 ou MP4 : <br />
+			<a href="https://notube.io/fr/youtube-app-v22" target="new">Notube</a><br />
+			
+			</p>
+		  </div>
+		  <div id="ANEF" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour l'ANEF. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="CAF" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour la CAF. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="Retraite" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour des demandes de retraite. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="SP" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour les services publics. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		</div>
+	</div>
+</div>
+  
+  
+  
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+  <script type="text/javascript" language="javascript">
+function ouvrirOnglet(evt,nomRubrique)
+{
+var i, tab, onglets;
+tab = document.getElementsByClassName("rubrique");
+
+for (i = 0; i < tab.length; i++)
+{
+tab[i].style.display = "none";
+}
+onglets = document.getElementsByClassName("onglet");
+for (i = 0; i < onglets.length; i++)
+{
+onglets[i].className = onglets[i].className.replace(" actif","");
+}
+document.getElementById(nomRubrique).style.display = "block";
+evt.currentTarget.className += " actif";
+}
+</script>
+</body>
+</html>

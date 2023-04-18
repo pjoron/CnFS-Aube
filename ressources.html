@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="fr" dir="ltr">
+  <head>
+  <title>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</title>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="CSS/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CNFS de l'Aube</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="https://www.cnfs-aube.fr">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Accueil</span>
+        </a>
+         <span class="tooltip">Accueil</span>
+      </li>
+      <li>
+       <a href="cartographie.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Acteurs</span>
+       </a>
+       <span class="tooltip">Acteurs</span>
+     </li>
+     <li>
+       <a href="administrations.html">
+         <i class='bx bx-grid-alt' ></i>
+         <span class="links_name">Administrations</span>
+       </a>
+       <span class="tooltip">Administrations</span>
+     </li>
+     <li>
+       <a href="/ressources.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Ressourcerie</span>
+       </a>
+       <span class="tooltip">Ressourcerie</span>
+     </li>
+     <li>
+       <a href="liens.html">
+         <i class='bx bx-link' ></i>
+         <span class="links_name">Liens utiles</span>
+       </a>
+       <span class="tooltip">liens utiles</span>
+     </li>
+     <li>
+       <a href="rencontres.html">
+         <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Rencontres mensuelles</span>
+       </a>
+       <span class="tooltip">Rencontres mensuelles</span>
+     </li>
+     <li>
+       <a href="discord.html">
+         <i class='bx bxl-discord' ></i>
+         <span class="links_name">Discord</span>
+       </a>
+       <span class="tooltip">Discord</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">Olivier</div>
+             <div class="job">CNFS</div>
+           </div>
+         </div>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text"><center><h3>La ressourcerie</h3></center></div><br />
+	  <div class="text">Vous trouverez ici toutes les ressources pour mener &agrave; bien notre mission de CNFS</div>
+  
+  <div id="conteneur">
+	<div id="contenu">
+	<!--
+	Impl&eacute;mentation
+	-->
+		<div id="auCentre">
+		  <div class="barre">
+			<button class="onglet actif" onclick="ouvrirOnglet(event,'CNFS')">Conseiller num&eacute;rique</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'FN')">Fake News</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'ordi')">Prise en main de l'ordi</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'Sp')">Smartphone/tablettes</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'ados')">Ados</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'prog')">Programmation</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'demarches')">D&eacute;marches</button>
+			<button class="onglet" onclick="ouvrirOnglet(event,'divers')">Divers</button>
+		  </div>
+		  
+		  <div id="CNFS" class="rubrique"> <!--On garde rubrique pour reconna�tre par code Javascript-->
+			<h1>Conseiller num&eacute;rique</h1>
+			<p><a href="https://coop.conseiller-numerique.gouv.fr/accueil" target="new"> Espace COOP</a></p>
+			<p><a href="https://discussion.conseiller-numerique.gouv.fr/	" target="new"> Mattermost</a></p>
+			<p><a href="https://webmail.eu.com/" target="new"> Mails CNFS</a></p>
+			<p><a href="https://www.rdv-aide-numerique.fr/agents/sign_in" target="new"> RDV Aide Num&eacute;rique</a></p>
+			<p><a href="https://labase.anct.gouv.fr/base/3?email=olivier.jouault@conseiller-numerique.fr" target="new"> La Base</a></p>
+			<p><a href="https://orga.pix.fr/campagnes/" target="new"> Pix Orga</a></p>
+			<p><a href="https://cartographie.societenumerique.gouv.fr/orientation" target="new"> Cartographie Nationale</a></p>
+            <p><a href="https://r.email.conseiller-numerique.fr/3gn2dba4xolpfe.html?t=1679997422" target="new"> Enquete Nationale</a></p>
+            
+		  </div>
+
+		  <div id="FN" class="rubrique"  style="display:none"> 
+			<h1>Fake News</h1>
+			<p><a href="https://kdrive.infomaniak.com/app/drive/488922/files/34" target="new"> Videos de Thomas Huchon</a>
+			</p>
+		  </div>
+
+		  <div id="ordi" class="rubrique" style="display:none">
+			<h1>Ressources</h1>
+			<p><a href="https://view.genial.ly/604e8f05ed96700d20b35b64" target="new">Boite &agrave; outils num&eacute;rique</a>
+			<p><a href="https://docs.google.com/presentation/d/e/2PACX-1vSn8mG9ueccDgn_Wn8h9V1QuTgBI0bmKRPYFIMwch5KXPEe9QIory57q4HJ3Wu3pfTmSsL2g_4cXIlM/pub?start=false&loop=false&delayms=3000&slide=id.p1
+" target="new">expliquer le clavier</a>
+
+			</p> 
+		  </div>
+
+		  <div id="Sp" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p><a href="https://docs.google.com/presentation/d/e/2PACX-1vQnWF4I_QEnlnJJApwIECk5PrDXjvj9v_Fi-vh9NVYsm1DFCrjgSZNAzlHNKRYDhMk_f1RFrcSpbGNG/pub?start=false&loop=false&delayms=3000" target="new">expliquer la tablette</a>
+			</p>
+		  </div>
+		  <div id="ados" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour l'ANEF. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="prog" class="rubrique" style="display:none">
+			<h1>Le code Php</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour la CAF. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="demarches" class="rubrique" style="display:none">
+			<h1>D&eacute;marches</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour des demandes de retraite. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		  <div id="divers" class="rubrique" style="display:none">
+			<h1>Un peu de tout</h1>
+			<p>Ici on va mettre tout ce que l'on veut pour les services publics. Des liens, des proc&eacute;dures, des t&eacute;l&eacute;phones
+			</p>
+		  </div>
+		</div>
+	</div>
+</div>
+  
+  </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+  <script type="text/javascript" language="javascript">
+function ouvrirOnglet(evt,nomRubrique)
+{
+var i, tab, onglets;
+tab = document.getElementsByClassName("rubrique");
+
+for (i = 0; i < tab.length; i++)
+{
+tab[i].style.display = "none";
+}
+onglets = document.getElementsByClassName("onglet");
+for (i = 0; i < onglets.length; i++)
+{
+onglets[i].className = onglets[i].className.replace(" actif","");
+}
+document.getElementById(nomRubrique).style.display = "block";
+evt.currentTarget.className += " actif";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="fr" dir="ltr">
+  <head>
+  <title>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</title>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="CSS/style.css">
+	<link rel="shortcut icon" href="images/favicon.png" />
+    <!-- Boxicons CDN link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CNFS de l'Aube</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="https://www.cnfs-aube.fr/">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Accueil</span>
+        </a>
+         <span class="tooltip">Accueil</span>
+      </li>
+      <li>
+       <a href="cartographie.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Acteurs</span>
+       </a>
+       <span class="tooltip">Acteurs</span>
+     </li>
+     <li>
+       <a href="administrations.html">
+         <i class='bx bx-grid-alt' ></i>
+         <span class="links_name">Administrations</span>
+       </a>
+       <span class="tooltip">Administrations</span>
+     </li>
+     <li>
+       <a href="/ressources.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Ressourcerie</span>
+       </a>
+       <span class="tooltip">Ressourcerie</span>
+     </li>
+     <li>
+       <a href="liens.html">
+         <i class='bx bx-link' ></i>
+         <span class="links_name">liens utiles</span>
+       </a>
+       <span class="tooltip">liens utiles</span>
+     </li>
+     <li>
+       <a href="rencontres.html">
+         <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Rencontres mensuelles</span>
+       </a>
+       <span class="tooltip">Rencontres mensuelles</span>
+     </li>
+     <li>
+       <a href="discord.html">
+         <i class='bx bxl-discord' ></i>
+         <span class="links_name">Communauté CnFS</span>
+       </a>
+       <span class="tooltip">Communauté CnFS</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">Olivier</div>
+             <div class="job">CNFS</div>
+           </div>
+         </div>
+     </li>
+    </ul>
+  </div>
+    <section class="home-section">
+        <div class="text">
+            <center><h3>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</h3></center>
+        </div><br />
+        <div class="text">
+            <h3>Outils CnFS - Espace Coop</h3>
+        </div><br />
+        <div class="text">
+            <ul class="liste">
+                <li><a href="https://discord.gg/FWZxs2DbeU" target ="_blank">Serveur Discord</a></li>
+                <li><a href="https://coop.conseiller-numerique.gouv.fr/" target ="_blank">Espace Coop</a><br></li>
+                <li><a href="https://discussion.conseiller-numerique.gouv.fr/" target ="_blank">Mattermost</a><br></li>
+                <li><a href="https://www.rdv-aide-numerique.fr/agents/sign_in" target ="_blank">Aide RDV Numérique</a><br></li>
+                <li><a href="https://labase.anct.gouv.fr/base/3?email=olivier.jouault@conseiller-numerique.fr" target ="_blank">La Base</a><br></li>
+                <li><a href="https://coop.conseiller-numerique.gouv.fr/compte-rendu-activite" target ="_blank">Ajouter un accompagnement</a><br></li>
+                <li><a href="https://coop.conseiller-numerique.gouv.fr/statistiques" target ="_blank">Statistiques</a><br></li>
+                <li><a href="https://webmail.eu.com/" target ="_blank">Webmail CNFS</a><br></li>
+                <li><a href="https://cartographie.societenumerique.gouv.fr/orientation" target ="_blank">Cartographie nationale</a><br></li>
+                <li><a href="https://metabase.conseiller-numerique.gouv.fr/public/dashboard/446208c4-cae2-4c0c-be19-44cb14ce7d06" target="new">Statistiques nationales</a></li>
+              </ul>
+        </div>
+    </section>
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventlistener("click", ()=>{
+    sidebar.classlist.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventlistener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classlist.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classlist.contains("open")){
+     closeBtn.classlist.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classlist.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
