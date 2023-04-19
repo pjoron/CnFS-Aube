@@ -1,0 +1,116 @@
+[
+    {
+      "titre": "1) Présentation / Brise Glace / Découverte du PC",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez les bases de l'utilisation d'un ordinateur, notamment la navigation dans les dossiers et les fichiers.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "2) Arnaques en ligne",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez à reconnaître les arnaques en ligne les plus courantes et à protéger vos informations personnelles sur Internet.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "3) Démarches en ligne / France Connect",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez à effectuer des démarches administratives en ligne et à utiliser le service France Connect de manière efficace.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "4) Scanner, signer et partager un document",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez à numériser des documents, à les signer électroniquement et à les partager en ligne via des services cloud.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "5) Traitement de texte",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez à utiliser un logiciel de traitement de texte de manière efficace, notamment la mise en forme de texte, l'utilisation de tableaux et l'insertion d'images.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "6) Tableur",
+      "public": "Intermédiaire",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "Apprenez à utiliser un logiciel de tableur de manière efficace, notamment la saisie et la manipulation de données, la création de graphiques et la mise en forme de tableaux.",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+
+    {
+        "titre": "7) Achats / vente en ligne",
+        "public": "Intermédiaire",
+        "duree": 60,
+        "img": "../images/computer.png",
+        "description": "Apprenez à acheter et à vendre en ligne en toute sécurité, notamment la recherche de produits, la comparaison de prix et la gestion de vos commandes.",
+        "lien_pedagogique": "../test.html",
+        "lien_react": "../test.html",
+        "lien_test": "../test.html"
+      },
+      {
+        "titre": "8) Gestion des emails",
+        "public": "Intermédiaire",
+        "duree": 60,
+        "img": "../images/computer.png",
+        "description": "Apprenez à gérer efficacement votre boîte de réception, notamment la suppression de courriels indésirables, l'utilisation de filtres et la création de réponses automatiques.",
+        "lien_pedagogique": "../test.html",
+        "lien_react": "../test.html",
+        "lien_test": "../test.html"
+      },
+      {
+        "titre": "9) Réseaux sociaux",
+        "public": "Intermédiaire",
+        "duree": 60,
+        "img": "../images/computer.png",
+        "description": "Apprenez à utiliser les réseaux sociaux de manière efficace et à gérer votre présence en ligne, notamment la protection de votre vie privée et la création de contenu de qualité.",
+        "lien_pedagogique": "../test.html",
+        "lien_react": "../test.html",
+        "lien_test": "../test.html"
+      },
+      {
+        "titre": "10) Santé",
+        "public": "Intermédiaire",
+        "duree": 60,
+        "img": "../images/computer.png",
+        "description": "Apprenez à utiliser des services en ligne pour gérer votre santé et à trouver des informations fiables sur les problèmes de santé courants.",
+        "lien_pedagogique": "../test.html",
+        "lien_react": "../test.html",
+        "lien_test": "../test.html"
+      },
+      {
+        "titre": "11) Quizz",
+        "public": "Intermédiaire",
+        "duree": 60,
+        "img": "../images/computer.png",
+        "description": "Testez vos connaissances sur les sujets abordés dans les cours précédents.",
+        "lien_pedagogique": "../test.html",
+        "lien_react": "../test.html",
+        "lien_test": "../test.html"
+      }
+
+
+  ]
+  

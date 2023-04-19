@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordinateur</title>
+    <link rel="stylesheet" href="../css/liste/main.css">
+</head>
+<body>
+    <h1 id="title">Les cours de thématique ! </h1>
+
+    <div id="carte"></div>
+
+
+    
+    <script>
+      fetch('json/thematique.json')
+        .then(function(response) {
+          console.log("Données chargées");
+          return response.json();
+        })
+        .then(function(dataLoaded) {
+          let table = "";
+          dataLoaded.forEach((element) => {
+            table += `
+              <div class="card_container">
+
+                <div class="up_card">
+                  <div class="one_two">
+                    <img src="../images/Groupe.svg" alt="durée" style="width:20%;">
+                    <p>${element.public}</p>
+                  </div>
+                  <div class="one_two">
+                    <img src="../images/Timer.svg" alt="durée" style="width:30%;">
+                    <p>${element.duree} minutes</p>
+                  </div>
+
+                </div>
+
+                <div class="card">
+                  <div class="img_card" style="background:linear-gradient(117deg, rgba(254,113,52,1) 0%, rgba(224,71,0,1) 66%);">
+                    <img src="${element.img}" alt="${element.titre}">
+                    <p>${element.description}</p>
+                  </div>
+                  <div class="title_card">
+                    ${element.titre}
+                  </div>
+                </div>
+    
+                <div class="down_card" style="background:linear-gradient(135deg, rgba(151,193,62,1) 0%, rgba(1,128,30,1) 49%);" >
+                  <div class="one_third">
+                        <div class="liens"><a href="${element.lien_test}"><img src="../images/FicheAction.svg" alt="durée" style="width:30%;"></a></div>
+                    </div>
+
+
+                    <div class="one_third">
+                        <div class="liens"><a href="${element.lien_react}"><img src="../images/presentation.png" alt="durée" style="width:35%;"></a></div>
+                    </div>
+
+                    <div class="one_third">
+                        <div class="liens"><a href="${element.lien_pedagogiue}"><img src="../images/Pdf.svg" alt="durée" style="width:35%;"></a></div>
+                    </div>
+                </div>
+              </div>`;
+          });
+          document.getElementById("carte").innerHTML = table;
+        });
+    </script>
+    
+</body>
+</html>

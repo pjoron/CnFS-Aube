@@ -1,0 +1,33 @@
+[
+    {
+      "titre": "Prévention 1",
+      "public": "Tout public",
+      "duree": 60,
+      "img": "../images/computer.png",
+      "description": "DESCRIPTION ADO 1",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "Prévention 2",
+      "public": "Étudiants",
+      "duree": 120,
+      "img": "../images/computer.png",
+      "description": "DESCRIPTION ADO 2",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    },
+    {
+      "titre": "Prévention 3",
+      "public": "Professionnels",
+      "duree": 240,
+      "img": "../images/computer.png",
+      "description": "DESCRIPTION ADO 3",
+      "lien_pedagogique": "../test.html",
+      "lien_react": "../test.html",
+      "lien_test": "../test.html"
+    }
+
+  ]

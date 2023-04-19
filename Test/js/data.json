@@ -1,0 +1,41 @@
+[
+    { "titre": "Ordinateur",
+    "nombres_ateliers": "41",
+    "color":" linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);",
+    "img": "images/computer.png",
+    "description": "Vous apprendrez grâce à ces activités à comment utiliser un ordinateur correctement" },
+
+    { "titre": "Smartphone",
+    "nombres_ateliers": "10",
+    "color":" linear-gradient(135deg, rgba(151,193,62,1) 0%, rgba(1,128,30,1) 49%);",
+    "img": "images/Smartphone.svg",
+    "description": "Vous apprendrez grâce à ces activités à comment utiliser un smartphone correctement" },
+
+    { "titre": "Thématique",
+    "nombres_ateliers": "5",
+    "color":" linear-gradient(117deg, rgba(254,113,52,1) 0%, rgba(224,71,0,1) 66%);",
+    "img": "images/tematique.png",
+    "description": "Vous apprendrez grâce à ces activités à ????" },
+
+
+    { "titre" :"Ado ",
+    "nombres_ateliers": "5",
+    "color":" linear-gradient(117deg, rgba(255,222,133,1) 0%, rgba(245,180,0,1) 62%);",
+    "img": "images/ado.png",
+    "description": "Vous apprendrez grâce à ces activités à ????"},
+
+    { "titre" :"Prévention",
+    "nombres_ateliers": "5",
+    "color":" linear-gradient(117deg, rgba(225,81,95,1) 0%, rgba(174,30,51,1) 63%);",
+    "img": "images/prevention.png",
+    "description": "Vous apprendrez grâce à ces activités à ????"},
+
+    { "titre" :"Quizz",
+    "nombres_ateliers": "5",
+    "color":" linear-gradient(117deg, rgba(83,58,123,1) 0%, rgba(124,60,122,1) 67%);",
+    "img": "images/quizz.png",
+    "description": "Vous apprendrez grâce à ces activités à ????"}
+    
+
+
+]
