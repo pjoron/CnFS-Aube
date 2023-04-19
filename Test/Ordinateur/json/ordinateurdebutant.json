@@ -2,7 +2,7 @@
   {
     "titre": "1) Présentation / Brise Glace / Découverte du PC",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez les bases de l'utilisation d'un ordinateur, telles que la découverte du PC et la présentation des fonctionnalités de base.",
     "lien_pedagogique": "../test.html",
@@ -12,7 +12,7 @@
   {
     "titre": "2) Arnaques en ligne",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à identifier et à éviter les arnaques en ligne.",
     "lien_pedagogique": "../test.html",
@@ -22,7 +22,7 @@
   {
     "titre": "3) Démarage PC / Souris / Clavier",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à démarrer un PC et à utiliser une souris et un clavier.",
     "lien_pedagogique": "../test.html",
@@ -32,7 +32,7 @@
   {
     "titre": "4) Clavier / Souris",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser un clavier et une souris.",
     "lien_pedagogique": "../test.html",
@@ -42,7 +42,7 @@
   {
     "titre": "5) Clavier / Souris / Bureau",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser un clavier, une souris et à naviguer dans l'interface bureau.",
     "lien_pedagogique": "../test.html",
@@ -52,7 +52,7 @@
   {
     "titre": "6) Fichiers / Dossiers / Explorateur de fichiers",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à créer et à organiser des fichiers et des dossiers, et à utiliser l'explorateur de fichiers.",
     "lien_pedagogique": "../test.html",
@@ -63,7 +63,7 @@
   {
     "titre": "7) Arborescence Fichiers / Copier Coller",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à naviguer dans l'arborescence des fichiers et à copier et coller des fichiers.",
     "lien_pedagogique": "../test.html",
@@ -73,7 +73,7 @@
   {
     "titre": "8) Programmes / Connexions / Périphériques",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à installer et à désinstaller des programmes, à gérer les connexions et les périphériques.",
     "lien_pedagogique": "../test.html",
@@ -83,7 +83,7 @@
   {
     "titre": "9) Quizz",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Testez vos connaissances sur les sujets abordés dans les cours précédents.",
     "lien_pedagogique": "../test.html",
@@ -93,7 +93,7 @@
   {
     "titre": "10) FAI",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à choisir et à configurer votre fournisseur d'accès Internet.",
     "lien_pedagogique": "../test.html",
@@ -103,7 +103,7 @@
   {
     "titre": "11) Internet / navigateurs / moteurs de recherche",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser Internet, les navigateurs et les moteurs de recherche.",
     "lien_pedagogique": "../test.html",
@@ -113,7 +113,7 @@
   {
     "titre": "12) Navigateurs / onglets / accéder à un site",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à naviguer sur le web en utilisant des onglets et à accéder à un site web.",
     "lien_pedagogique": "../test.html",
@@ -124,7 +124,7 @@
   {
     "titre": "13) Faire une recherche et analyse des résultats",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à faire une recherche sur Internet et à analyser les résultats de recherche.",
     "lien_pedagogique": "../test.html",
@@ -134,7 +134,7 @@
   {
     "titre": "14) Onglets / extensions / navigation avancée",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser des onglets avancés, des extensions et à naviguer sur le web de manière plus avancée.",
     "lien_pedagogique": "../test.html",
@@ -144,7 +144,7 @@
   {
     "titre": "15) Quizz",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Testez vos connaissances sur les sujets abordés dans les cours précédents.",
     "lien_pedagogique": "../test.html",
@@ -154,7 +154,7 @@
   {
     "titre": "16) Sécurité / mot de passe / création de comptes",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à créer des comptes en ligne, à sécuriser vos mots de passe et à protéger votre vie privée.",
     "lien_pedagogique": "../test.html",
@@ -164,7 +164,7 @@
   {
     "titre": "17) Création d'une boite mail",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à créer une boîte mail et à l'utiliser de manière efficace.",
     "lien_pedagogique": "../test.html",
@@ -174,7 +174,7 @@
   {
     "titre": "18) Utilisation basique mail",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser une boîte mail de manière basique, notamment à écrire, envoyer et recevoir des mails.",
     "lien_pedagogique": "../test.html",
@@ -185,7 +185,7 @@
   {
     "titre": "19) pièces jointes mail",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à joindre des fichiers à un mail et à les envoyer.",
     "lien_pedagogique": "../test.html",
@@ -195,7 +195,7 @@
   {
     "titre": "20) scanner un document",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à scanner un document et à l'enregistrer sur votre ordinateur.",
     "lien_pedagogique": "../test.html",
@@ -205,7 +205,7 @@
   {
     "titre": "21) transfert de documents + signature",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à transférer des documents via des services en ligne et à signer électroniquement des documents importants.",
     "lien_pedagogique": "../test.html",
@@ -215,7 +215,7 @@
   {
     "titre": "22) Quizz",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Testez vos connaissances sur les sujets abordés dans les cours précédents.",
     "lien_pedagogique": "../test.html",
@@ -225,7 +225,7 @@
   {
     "titre": "23) Démarches en ligne / France Connect",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à effectuer des démarches administratives en ligne et à utiliser le service France Connect.",
     "lien_pedagogique": "../test.html",
@@ -235,7 +235,7 @@
   {
     "titre": "24) Impots",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à effectuer votre déclaration d'impôts en ligne et à gérer vos impôts via Internet.",
     "lien_pedagogique": "../test.html",
@@ -246,7 +246,7 @@
   {
     "titre": "25) Banque en ligne",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à gérer vos comptes bancaires en ligne et à effectuer des opérations courantes via Internet.",
     "lien_pedagogique": "../test.html",
@@ -256,7 +256,7 @@
   {
     "titre": "26) achats en ligne",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à acheter en ligne en toute sécurité et à trouver les meilleurs produits et offres sur le web.",
     "lien_pedagogique": "../test.html",
@@ -266,7 +266,7 @@
   {
     "titre": "27) santé",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser des services en ligne pour gérer votre santé et à trouver des informations fiables sur les problèmes de santé courants.",
     "lien_pedagogique": "../test.html",
@@ -276,7 +276,7 @@
   {
     "titre": "28) Visio conférence",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser des outils de visioconférence pour communiquer en ligne avec vos amis, votre famille et vos collègues.",
     "lien_pedagogique": "../test.html",
@@ -286,7 +286,7 @@
   {
     "titre": "29) Réseaux sociaux",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Apprenez à utiliser les réseaux sociaux de manière efficace et à protéger votre vie privée en ligne.",
     "lien_pedagogique": "../test.html",
@@ -296,7 +296,7 @@
   {
     "titre": "30) Quizz",
     "public": "Débutant",
-    "duree": 60,
+    "duree": 90,
     "img": "../images/computer.png",
     "description": "Testez vos connaissances sur les sujets abordés dans les cours précédents.",
     "lien_pedagogique": "../test.html",
