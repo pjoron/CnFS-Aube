@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/accueil/main.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+
+    <script src="https://kit.fontawesome.com/7182d253a5.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+
+    <section class="sidebar">
+      <div class="nav-header">
+        <p class="logo">CNFS-AUBE</p>
+        <i class="bx bx-menu-alt-right btn-menu"></i>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#">
+            <i class="bx bx-home-alt-2"></i>
+            <span class="title">Home</span>
+          </a>
+          <span class="tooltip">Home</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span class="title">User</span>
+          </a>
+          <span class="tooltip">User</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-phone-call"></i>
+
+            <span class="title">Calls</span>
+            
+          </a>
+          <span class="tooltip">Calls</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-bookmark"></i>
+            <span class="title">Bookmarks</span>
+          </a>
+          <span class="tooltip">Bookmarks</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-wallet-alt"></i>
+            <span class="title">Wallet</span>
+          </a>
+          <span class="tooltip">Wallet</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bxs-devices"></i>
+            <span class="title">Devices</span>
+          </a>
+          <span class="tooltip">Devices</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="title">Setting</span>
+          </a>
+          <span class="tooltip">Setting</span>
+        </li>
+      </ul>
+      <!-- <div class="theme-wrapper">
+        <p>Envoyer un mail</p>
+        <div class="theme-btn">
+          <span class="theme-ball"></span>
+        </div>
+      </div> -->
+    </section>
+    <section class="home">
+
+
+      <h1 id="title">Voici nos thématiques : </h1>
+      <div id="carte"></div>
+
+    </section>
+
+
+
+
+    
+    <script>
+
+        function removeDiacritics(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+
+      fetch('js/data.json')
+        .then(function(response) {
+          console.log("Données chargées");
+          return response.json();
+        })
+        .then(function(dataLoaded) {
+          let table = "";
+          dataLoaded.forEach((element) => {
+            table += `
+              <div class="card_container" onclick="window.location='${removeDiacritics(element.titre).toLowerCase()}'">
+                <div class="card">
+                  <div class="img_card" style="background:${element.color}">
+                    <img src="${element.img}" alt="${element.titre}">
+                  </div>
+                  <div class="title_card">
+                    ${element.titre}
+                  </div>
+                  <div class="description_card">
+                    ${element.description}
+                  </div>
+                </div>
+    
+                <div class="composants_card" style="background:${element.color}" >
+                  <div class="info_card">
+                    <p>Nombre d'ateliers : ${element.nombres_ateliers}</p>
+                  </div>
+                </div>
+              </div>`;
+          });
+          document.getElementById("carte").innerHTML = table;
+        });
+    </script>
+
+    <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>
