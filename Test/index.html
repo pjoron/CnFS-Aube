@@ -6,88 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accueil</title>
     <link rel="stylesheet" href="css/accueil/main.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
 
-    <script src="https://kit.fontawesome.com/7182d253a5.js" crossorigin="anonymous"></script>
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="../src/css/style.css">
+	  <link rel="shortcut icon" href="../src/img/favicon.png" />
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 
 <body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+        <div class="logo_name">CNFS de l'Aube</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">
+          <i class='bx bx-home'></i>
+          <span class="links_name">Accueil</span>
+        </a>
+         <span class="tooltip">Accueil</span>
+      </li>
+      <li>
+       <a href="cartographie.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">Acteurs</span>
+       </a>
+       <span class="tooltip">Acteurs</span>
+     </li>
+     <li>
+       <a href="administrations.html">
+         <i class='bx bx-grid-alt' ></i>
+         <span class="links_name">Administrations</span>
+       </a>
+       <span class="tooltip">Administrations</span>
+     </li>
+     <li>
+       <a href="/ressources.html">
+         <i class='bx bx-folder' ></i>
+         <span class="links_name">Ressourcerie</span>
+       </a>
+       <span class="tooltip">Ressourcerie</span>
+     </li>
+     <li>
+       <a href="liens.html">
+         <i class='bx bx-link' ></i>
+         <span class="links_name">Liens utiles</span>
+       </a>
+       <span class="tooltip">liens utiles</span>
+     </li>
+     <li>
+       <a href="rencontres.html">
+         <i class='bx bx-calendar-event' ></i>
+         <span class="links_name">Rencontres mensuelles</span>
+       </a>
+       <span class="tooltip">Rencontres mensuelles</span>
+     </li>
+     <li>
+       <a href="discord.html">
+         <i class='bx bxl-discord' ></i>
+         <span class="links_name">Discord</span>
+       </a>
+       <span class="tooltip">Discord</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <!--<img src="profile.jpg" alt="profileImg">-->
+           <div class="name_job">
+             <div class="name">Olivier</div>
+             <div class="job">CNFS</div>
+           </div>
+         </div>
+     </li>
+    </ul>
+  </div>
+  <section>
+    <h1 id="title">Voici nos thématiques : </h1>
 
-    <section class="sidebar">
-      <div class="nav-header">
-        <p class="logo">CNFS-AUBE</p>
-        <i class="bx bx-menu-alt-right btn-menu"></i>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-home-alt-2"></i>
-            <span class="title">Home</span>
-          </a>
-          <span class="tooltip">Home</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fa-solid fa-user"></i>
-            <span class="title">User</span>
-          </a>
-          <span class="tooltip">User</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-phone-call"></i>
+    <div id="carte"></div>
+  </section>
 
-            <span class="title">Calls</span>
-            
-          </a>
-          <span class="tooltip">Calls</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-bookmark"></i>
-            <span class="title">Bookmarks</span>
-          </a>
-          <span class="tooltip">Bookmarks</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-wallet-alt"></i>
-            <span class="title">Wallet</span>
-          </a>
-          <span class="tooltip">Wallet</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bxs-devices"></i>
-            <span class="title">Devices</span>
-          </a>
-          <span class="tooltip">Devices</span>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="title">Setting</span>
-          </a>
-          <span class="tooltip">Setting</span>
-        </li>
-      </ul>
-      <!-- <div class="theme-wrapper">
-        <p>Envoyer un mail</p>
-        <div class="theme-btn">
-          <span class="theme-ball"></span>
-        </div>
-      </div> -->
-    </section>
-    <section class="home">
-
-
-      <h1 id="title">Voici nos thématiques : </h1>
-      <div id="carte"></div>
-
-    </section>
-
-
+   
 
 
     
@@ -131,8 +133,49 @@
         });
     </script>
 
-    <script src="js/main.js"></script>
+<script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
 
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+  <script type="text/javascript" language="javascript">
+function ouvrirOnglet(evt,nomRubrique)
+{
+var i, tab, onglets;
+tab = document.getElementsByClassName("rubrique");
+
+for (i = 0; i < tab.length; i++)
+{
+tab[i].style.display = "none";
+}
+onglets = document.getElementsByClassName("onglet");
+for (i = 0; i < onglets.length; i++)
+{
+onglets[i].className = onglets[i].className.replace(" actif","");
+}
+document.getElementById(nomRubrique).style.display = "block";
+evt.currentTarget.className += " actif";
+}
+</script>
 
 
 </body>

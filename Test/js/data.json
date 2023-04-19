@@ -1,6 +1,6 @@
 [
     { "titre": "Ordinateur",
-    "nombres_ateliers": "41",
+    "nombres_ateliers": "15",
     "color":" linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);",
     "img": "images/computer.png",
     "description": "Vous apprendrez grâce à ces activités à comment utiliser un ordinateur correctement" },
@@ -8,7 +8,7 @@
     { "titre": "Smartphone",
     "nombres_ateliers": "10",
     "color":" linear-gradient(135deg, rgba(151,193,62,1) 0%, rgba(1,128,30,1) 49%);",
-    "img": "images/Smartphone.svg",
+    "img": "images/smartphone.png",
     "description": "Vous apprendrez grâce à ces activités à comment utiliser un smartphone correctement" },
 
     { "titre": "Thématique",

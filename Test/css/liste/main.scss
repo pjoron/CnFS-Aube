@@ -6,9 +6,7 @@
     box-sizing: border-box;
 }
 
-$color_1: #18181b;
-$font-family_1: 'Arial';
-$background-color_1: #c2410c;
+
 
 
 body {
@@ -17,17 +15,6 @@ body {
     background-color: #E5E8F7;
     font-family: 'Poppins', sans-serif;
 
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-            margin-bottom: 8vh;
-        }
-    }
-
     #title {
         padding-top: 2vh;
         width: 100vw;
@@ -35,7 +22,7 @@ body {
         text-align: center;
     }
 
-    #carte , #carteinter{
+    #carte {
 
         height: 100vh;
         width: 100vw;
@@ -56,10 +43,9 @@ body {
         display: flex;
         flex-direction: column;
         margin: 5px;
+        cursor: pointer;
+
         &:hover {
-
-
-
 
             &:hover.card_container {
              .card {
@@ -68,13 +54,6 @@ body {
                         border-radius: 0;
                         img {
                             height: 100%;
-                            display: none;
-                            transition: 0.5s;
-                        }
-
-
-                        p {
-                            display: block;
                         }
                     }
 
@@ -120,6 +99,23 @@ body {
                     text-align: center;
 
                 }
+
+                &:hover {
+                    border-radius: 0;
+
+
+                        img {
+                            display: none;
+                            transition: 0.5s;
+                        }
+                    p {
+                        display: block;
+                        transition: 1000ms;
+                    }
+                }
+
+
+
             }
 
             .title_card {
@@ -132,14 +128,6 @@ body {
                 justify-content: center;
                 align-items: center;
                 border-radius: 0px 0px 15px 15px;
-            }
-
-
-            &:hover {
-                border-radius: 0;
-
-
-
             }
 
 
@@ -157,17 +145,12 @@ body {
             .one_two {
                 font-size: 15px;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 width: calc(100% / 2);
                 text-align: center;
                 justify-content: center;
                 font-family: 'Poppins', sans-serif;
                 border-bottom: 1px solid white;
-                align-items: center;
-
-                img {
-                    margin-right: 7px;
-                }
             }
 
             .one_two:nth-child(2) {
@@ -215,64 +198,4 @@ body {
         }
     }
 }
-}
-
-
-
-
-
-// DEBUTANT OU INTERMEDIAIRE FONCTIONNANT AVEC LE JS
-
-.tabs {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-    width: 30vw;
-	padding-bottom: 12px;
-
-	li {
-		margin-right: 24px;
-		a {
-			margin-right: 24px;
-			font-size: 16px;
-			font-family: $font-family_1;
-			color: $color_1;
-			text-decoration: none;
-			position: relative;
-			&:after {
-				content: '';
-				height: 2px;
-				width: 0px;
-				background-color: $background-color_1;
-				position: absolute;
-				bottom: -15px;
-				right: 0;
-				transition: 0.3s width ease-in-out;
-			}
-			&:hover {
-				&:after {
-					width: 100%;
-					left: 0;
-				}
-			}
-		}
-		a.active {
-			&:after {
-				width: 100%;
-				left: 0;
-			}
-		}
-		&:last-of-type {
-			margin-right: 0;
-		}
-	}
-}
-.tabs-content__tab {
-	display: none;
-}
-.tabs-content__tab.active {
-	display: block;
 }

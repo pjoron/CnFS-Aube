@@ -11,21 +11,13 @@ body {
   background-color: #E5E8F7;
   font-family: "Poppins", sans-serif;
 }
-body header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-body header h1 {
-  margin-bottom: 8vh;
-}
 body #title {
   padding-top: 2vh;
   width: 100vw;
   height: 5vh;
   text-align: center;
 }
-body #carte, body #carteinter {
+body #carte {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -35,37 +27,33 @@ body #carte, body #carteinter {
   justify-content: space-evenly;
   padding: 8vw;
 }
-body #carte .card_container, body #carteinter .card_container {
+body #carte .card_container {
   width: 300px;
   height: 450px;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   margin: 5px;
+  cursor: pointer;
 }
-body #carte .card_container:hover:hover.card_container .card .img_card, body #carteinter .card_container:hover:hover.card_container .card .img_card {
+body #carte .card_container:hover:hover.card_container .card .img_card {
   border-radius: 0;
 }
-body #carte .card_container:hover:hover.card_container .card .img_card img, body #carteinter .card_container:hover:hover.card_container .card .img_card img {
+body #carte .card_container:hover:hover.card_container .card .img_card img {
   height: 100%;
-  display: none;
-  transition: 0.5s;
 }
-body #carte .card_container:hover:hover.card_container .card .img_card p, body #carteinter .card_container:hover:hover.card_container .card .img_card p {
-  display: block;
-}
-body #carte .card_container:hover:hover.card_container .card .title_card, body #carteinter .card_container:hover:hover.card_container .card .title_card {
+body #carte .card_container:hover:hover.card_container .card .title_card {
   border-radius: 0;
 }
-body #carte .card_container:hover:hover.card_container .down_card, body #carteinter .card_container:hover:hover.card_container .down_card {
+body #carte .card_container:hover:hover.card_container .down_card {
   opacity: 1;
   height: 60px;
 }
-body #carte .card_container:hover:hover.card_container .up_card, body #carteinter .card_container:hover:hover.card_container .up_card {
+body #carte .card_container:hover:hover.card_container .up_card {
   opacity: 1;
   height: 60px;
 }
-body #carte .card_container .card .img_card, body #carteinter .card_container .card .img_card {
+body #carte .card_container .card .img_card {
   height: 300px;
   width: 300px;
   display: flex;
@@ -74,16 +62,27 @@ body #carte .card_container .card .img_card, body #carteinter .card_container .c
   border-radius: 15px 15px 0 0;
   align-items: center;
 }
-body #carte .card_container .card .img_card img, body #carteinter .card_container .card .img_card img {
+body #carte .card_container .card .img_card img {
   height: 90%;
   transition: 0.5s;
 }
-body #carte .card_container .card .img_card p, body #carteinter .card_container .card .img_card p {
+body #carte .card_container .card .img_card p {
   display: none;
   width: 75%;
   text-align: center;
 }
-body #carte .card_container .card .title_card, body #carteinter .card_container .card .title_card {
+body #carte .card_container .card .img_card:hover {
+  border-radius: 0;
+}
+body #carte .card_container .card .img_card:hover img {
+  display: none;
+  transition: 0.5s;
+}
+body #carte .card_container .card .img_card:hover p {
+  display: block;
+  transition: 1000ms;
+}
+body #carte .card_container .card .title_card {
   height: 50px;
   width: 300px;
   text-align: center;
@@ -94,10 +93,7 @@ body #carte .card_container .card .title_card, body #carteinter .card_container 
   align-items: center;
   border-radius: 0px 0px 15px 15px;
 }
-body #carte .card_container .card:hover, body #carteinter .card_container .card:hover {
-  border-radius: 0;
-}
-body #carte .card_container .up_card, body #carteinter .card_container .up_card {
+body #carte .card_container .up_card {
   width: 300px;
   border-radius: 15px 15px 0 0;
   display: flex;
@@ -106,24 +102,20 @@ body #carte .card_container .up_card, body #carteinter .card_container .up_card 
   transition: 0.5s;
   background-color: #cad3ff;
 }
-body #carte .card_container .up_card .one_two, body #carteinter .card_container .up_card .one_two {
+body #carte .card_container .up_card .one_two {
   font-size: 15px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 50%;
   text-align: center;
   justify-content: center;
   font-family: "Poppins", sans-serif;
   border-bottom: 1px solid white;
-  align-items: center;
 }
-body #carte .card_container .up_card .one_two img, body #carteinter .card_container .up_card .one_two img {
-  margin-right: 7px;
-}
-body #carte .card_container .up_card .one_two:nth-child(2), body #carteinter .card_container .up_card .one_two:nth-child(2) {
+body #carte .card_container .up_card .one_two:nth-child(2) {
   border-left: 1px solid white;
 }
-body #carte .card_container .down_card, body #carteinter .card_container .down_card {
+body #carte .card_container .down_card {
   width: 300px;
   border-radius: 0 0 15px 15px;
   display: flex;
@@ -131,7 +123,7 @@ body #carte .card_container .down_card, body #carteinter .card_container .down_c
   opacity: 0;
   transition: 0.5s;
 }
-body #carte .card_container .down_card .one_third, body #carteinter .card_container .down_card .one_third {
+body #carte .card_container .down_card .one_third {
   font-size: 13.3px;
   display: flex;
   flex-direction: column;
@@ -140,65 +132,14 @@ body #carte .card_container .down_card .one_third, body #carteinter .card_contai
   justify-content: center;
   font-family: "Poppins", sans-serif;
 }
-body #carte .card_container .down_card .one_third a, body #carteinter .card_container .down_card .one_third a {
+body #carte .card_container .down_card .one_third a {
   text-decoration: none;
   color: white;
 }
-body #carte .card_container .down_card .one_third a:hover, body #carteinter .card_container .down_card .one_third a:hover {
+body #carte .card_container .down_card .one_third a:hover {
   color: #cad3ff;
 }
-body #carte .card_container .down_card .one_third:nth-child(2), body #carteinter .card_container .down_card .one_third:nth-child(2) {
+body #carte .card_container .down_card .one_third:nth-child(2) {
   border-left: 1px solid white;
   border-right: 1px solid white;
-}
-
-.tabs {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 30vw;
-  padding-bottom: 12px;
-}
-.tabs li {
-  margin-right: 24px;
-}
-.tabs li a {
-  margin-right: 24px;
-  font-size: 16px;
-  font-family: "Arial";
-  color: #18181b;
-  text-decoration: none;
-  position: relative;
-}
-.tabs li a:after {
-  content: "";
-  height: 2px;
-  width: 0px;
-  background-color: #c2410c;
-  position: absolute;
-  bottom: -15px;
-  right: 0;
-  transition: 0.3s width ease-in-out;
-}
-.tabs li a:hover:after {
-  width: 100%;
-  left: 0;
-}
-.tabs li a.active:after {
-  width: 100%;
-  left: 0;
-}
-.tabs li:last-of-type {
-  margin-right: 0;
-}
-
-.tabs-content__tab {
-  display: none;
-}
-
-.tabs-content__tab.active {
-  display: block;
 }/*# sourceMappingURL=main.css.map */

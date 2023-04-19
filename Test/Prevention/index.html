@@ -15,7 +15,7 @@
 
     
     <script>
-      fetch('json/preventiondebutant.json')
+      fetch('json/prevention.json')
         .then(function(response) {
           console.log("Données chargées");
           return response.json();
@@ -28,12 +28,10 @@
 
                 <div class="up_card">
                   <div class="one_two">
-                    <img src="../images/Groupe.svg" alt="durée" style="width:20%;">
-                    <p>${element.public}</p>
+                    <p>Public : ${element.public}</p>
                   </div>
                   <div class="one_two">
-                    <img src="../images/Timer.svg" alt="durée" style="width:30%;">
-                    <p>${element.duree} minutes</p>
+                    <p>Durée : ${element.duree} minutes</p>
                   </div>
 
                 </div>
@@ -48,18 +46,16 @@
                   </div>
                 </div>
     
-                <div class="down_card" style="background:linear-gradient(135deg, rgba(151,193,62,1) 0%, rgba(1,128,30,1) 49%);" >
-                  <div class="one_third">
-                        <div class="liens"><a href="${element.lien_test}"><img src="../images/FicheAction.svg" alt="durée" style="width:30%;"></a></div>
-                    </div>
-
-
+                <div class="down_card" style="background:linear-gradient(117deg, rgba(225,81,95,1) 0%, rgba(174,30,51,1) 63%);" >
                     <div class="one_third">
-                        <div class="liens"><a href="${element.lien_react}"><img src="../images/presentation.png" alt="durée" style="width:35%;"></a></div>
+                        <div class="liens"><a href="${element.lien_pedagogiue}">Lien pédagogique</a></div>
                     </div>
 
                     <div class="one_third">
-                        <div class="liens"><a href="${element.lien_pedagogiue}"><img src="../images/Pdf.svg" alt="durée" style="width:35%;"></a></div>
+                        <div class="liens"><a href="${element.lien_react}">Le cours</a></div>
+                    </div>
+                    <div class="one_third">
+                        <div class="liens"><a href="${element.lien_test}">Lien3</a></div>
                     </div>
                 </div>
               </div>`;

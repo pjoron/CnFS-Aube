@@ -8,138 +8,61 @@
     <link rel="stylesheet" href="../css/liste/main.css">
 </head>
 <body>
+    <h1 id="title">Les cours sur ordinateur ! </h1>
 
-  <header>
-      <h1 id="title">Les cours sur ordinateur ! </h1>
+    <div id="carte"></div>
 
-      <ul class="tabs">
-        <li><a href="#" data-open="debutant" class="active">Débutant</a></li>
-        <li><a href="#" data-open="intermediaire">Intermédiaire</a></li>
-      </ul>
 
-  </header>
+    
+    <script>
+      fetch('json/ordinateur.json')
+        .then(function(response) {
+          console.log("Données chargées");
+          return response.json();
+        })
+        .then(function(dataLoaded) {
+          let table = "";
+          dataLoaded.forEach((element) => {
+            table += `
+              <div class="card_container">
 
-    <div class="tabs-content">
-
-      <div class="tabs-content__tab debutant active">
-        <div id="carte"></div>
-        <script>
-          fetch('json/ordinateurdebutant.json')
-            .then(function(response) {
-              console.log("Données chargées");
-              return response.json();
-            })
-            .then(function(dataLoaded) {
-              let table = "";
-              dataLoaded.forEach((element) => {
-                table += `
-                  <div class="card_container">
-
-                    <div class="up_card">
+                <div class="up_card">
                   <div class="one_two">
-                    <img src="../images/Groupe.svg" alt="durée" style="width:20%;">
-                    <p>${element.public}</p>
+                    <p>Public : ${element.public}</p>
                   </div>
                   <div class="one_two">
-                    <img src="../images/Timer.svg" alt="durée" style="width:30%;">
-                    <p>${element.duree} minutes</p>
+                    <p>Durée : ${element.duree} minutes</p>
                   </div>
 
-                    </div>
+                </div>
 
-                    <div class="card">
-                      <div class="img_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);">
-                        <img src="${element.img}" alt="${element.titre}">
-                        <p>${element.description}</p>
-                      </div>
-                      <div class="title_card">
-                        ${element.titre}
-                      </div>
-                    </div>
-        
-                    <div class="down_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);" >
-                      <div class="one_third">
-                        <div class="liens"><a href="${element.lien_test}"><img src="../images/FicheAction.svg" alt="durée" style="width:30%;"></a></div>
-                    </div>
-
-
+                <div class="card">
+                  <div class="img_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);">
+                    <img src="${element.img}" alt="${element.titre}">
+                    <p>${element.description}</p>
+                  </div>
+                  <div class="title_card">
+                    ${element.titre}
+                  </div>
+                </div>
+    
+                <div class="down_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);" >
                     <div class="one_third">
-                        <div class="liens"><a href="${element.lien_react}"><img src="../images/presentation.png" alt="durée" style="width:35%;"></a></div>
+                        <div class="liens"><a href="${element.lien_pedagogiue}">Lien pédagogique</a></div>
                     </div>
 
                     <div class="one_third">
-                        <div class="liens"><a href="${element.lien_pedagogiue}"><img src="../images/Pdf.svg" alt="durée" style="width:35%;"></a></div>
+                        <div class="liens"><a href="${element.lien_react}">Le cours</a></div>
+                    </div>
+                    <div class="one_third">
+                        <div class="liens"><a href="${element.lien_test}">Lien3</a></div>
                     </div>
                 </div>
               </div>`;
-              });
-              document.getElementById("carte").innerHTML = table;
-            });
-        </script>
-
-      </div>
-
-      <div class="tabs-content__tab intermediaire">
-
-        <div id="carteinter"></div>
-        <script>
-          fetch('json/ordinateurintermediaire.json')
-            .then(function(response) {
-              console.log("Données chargées");
-              return response.json();
-            })
-            .then(function(dataLoaded) {
-              let table = "";
-              dataLoaded.forEach((element) => {
-                table += `
-                  <div class="card_container">
-
-                    <div class="up_card">
-                  <div class="one_two">
-                    <img src="../images/Groupe.svg" alt="durée" style="width:20%;">
-                    <p>${element.public}</p>
-                  </div>
-                  <div class="one_two">
-                    <img src="../images/Timer.svg" alt="durée" style="width:30%;">
-                    <p>${element.duree} minutes</p>
-                  </div>
-
-                    </div>
-
-                    <div class="card">
-                      <div class="img_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);">
-                        <img src="${element.img}" alt="${element.titre}">
-                        <p>${element.description}</p>
-                      </div>
-                      <div class="title_card">
-                        ${element.titre}
-                      </div>
-                    </div>
-        
-                    <div class="down_card" style="background:linear-gradient(135deg, rgba(20,234,192,1) 0%, rgba(32,99,228,1) 52%, rgba(48,19,249,1) 100%);" >
-                      <div class="one_third">
-                        <div class="liens"><a href="${element.lien_test}"><img src="../images/FicheAction.svg" alt="durée" style="width:30%;"></a></div>
-                    </div>
-
-
-                    <div class="one_third">
-                        <div class="liens"><a href="${element.lien_react}"><img src="../images/presentation.png" alt="durée" style="width:35%;"></a></div>
-                    </div>
-
-                    <div class="one_third">
-                        <div class="liens"><a href="${element.lien_pedagogiue}"><img src="../images/Pdf.svg" alt="durée" style="width:35%;"></a></div>
-                    </div>
-                </div>
-              </div>`;
-              });
-              document.getElementById("carteinter").innerHTML = table;
-            });
-        </script>
-
-      </div>
-      
-
-</div>
-  <script defer src="../js/main.js"></script>
+          });
+          document.getElementById("carte").innerHTML = table;
+        });
+    </script>
+    
 </body>
 </html>
