@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
-<html lang="fr" dir="ltr">
-  <head>
-  <title>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</title>
-    <meta charset="UTF-8">
-    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
-    <link rel="stylesheet" href="CSS/style.css">
-	<link rel="shortcut icon" href="images/favicon.png" />
-    <!-- Boxicons CDN link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   </head>
+<html lang="fr">
+<head>
+    <title>Bienvenue sur le site d'entraide communautaire des CNFS de l'Aube !</title>
+      <meta charset="UTF-8">
+      <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+      <link rel="stylesheet" href="src/css/style.css">
+      <link rel="shortcut icon" href="src/img/favicon.png">
+      <!-- Boxicons CDN Link -->
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Meta Opengraph-->
+      <meta property="og:title" content="">
+      <meta property="og:site_name" content="">
+      <meta property="og:url" content="">
+      <meta property="og:description" content="">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="">
+    </head>
 <body>
   <div class="sidebar">
     <div class="logo-details">
@@ -20,7 +26,7 @@
     </div>
     <ul class="nav-list">
       <li>
-        <a href="https://www.cnfs-aube.fr/">
+        <a href="index.html">
           <i class='bx bx-home'></i>
           <span class="links_name">Accueil</span>
         </a>
@@ -101,29 +107,48 @@
               </ul>
         </div>
     </section>
-  <script>
-  let sidebar = document.querySelector(".sidebar");
+    <script>
+      let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let searchBtn = document.querySelector(".bx-search");
 
-  closeBtn.addEventlistener("click", ()=>{
-    sidebar.classlist.toggle("open");
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
     menuBtnChange();//calling the function(optional)
   });
 
-  searchBtn.addEventlistener("click", ()=>{ // Sidebar open when you click on the search iocn
-    sidebar.classlist.toggle("open");
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
     menuBtnChange(); //calling the function(optional)
   });
 
   // following are the code to change sidebar button(optional)
   function menuBtnChange() {
-   if(sidebar.classlist.contains("open")){
-     closeBtn.classlist.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
    }else {
-     closeBtn.classlist.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
    }
   }
-  </script>
+      </script>
+      <script type="text/javascript" language="javascript">
+    function ouvrirOnglet(evt,nomRubrique)
+    {
+    var i, tab, onglets;
+    tab = document.getElementsByClassName("rubrique");
+    
+    for (i = 0; i < tab.length; i++)
+    {
+    tab[i].style.display = "none";
+    }
+    onglets = document.getElementsByClassName("onglet");
+    for (i = 0; i < onglets.length; i++)
+    {
+    onglets[i].className = onglets[i].className.replace(" actif","");
+    }
+    document.getElementById(nomRubrique).style.display = "block";
+    evt.currentTarget.className += " actif";
+    }
+    </script>
 </body>
 </html>
